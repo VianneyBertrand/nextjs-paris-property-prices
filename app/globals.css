@@ -1,0 +1,23 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #4f46e5;
+  --background-color: #f3f4f6;
+  --text-color: #1f2937;
+  --card-background: #ffffff;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
